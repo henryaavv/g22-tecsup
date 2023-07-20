@@ -1,0 +1,41 @@
+*{
+    margin: 0;
+    box-sizing: border-box;
+    padding: 0;
+}
+
+header{
+    background-color: blue;
+   
+}
+
+body{
+   height: 100vh;
+   display:flex;
+   flex-direction: column;
+}
+
+main{
+    display: flex;
+    /* align-items: flex-end; */
+    flex-wrap: 1021px wrap;
+    max-width:1024px;
+    justify-content: center;
+    flex-wrap: wrap;
+
+}
+
+ 
+main section{
+    background-color: green;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    
+}
+
+
+
+footer{
+    background-color: blue;
+}

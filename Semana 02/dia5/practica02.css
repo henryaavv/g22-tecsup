@@ -1,0 +1,32 @@
+*{
+    margin: 0;
+    box-sizing: border-box;
+    padding: 0;
+}
+
+
+header {
+    background-color: #e5e5e5;
+  }
+
+  .card {
+    min-height: 10rem;
+    padding: 2rem;
+    text-align: justify;
+    width: 20rem;
+    border-radius: 20px;
+    background: linear-gradient(180deg,#d79a74, #70e038,#121996,#c01a78,#e89313,#2cc2b6); 
+  }
+
+  .card h2,p{
+    z-index: 2;
+    background-color: white;
+    padding: 15px;
+    margin: -20px;
+    border-radius: 10px;
+  }
+
+
+.card:hover{
+    background: linear-gradient(45deg,#d79a74, #70e038,#121996,#c01a78,#e89313,#2cc2b6); 
+}

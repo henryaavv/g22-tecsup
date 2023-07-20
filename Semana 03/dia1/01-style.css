@@ -1,0 +1,60 @@
+:root{
+    --color-primary: #02bfb1;
+
+}
+
+*{
+    margin:0;
+    box-sizing:border-box;
+    padding:0;
+}
+
+header{
+    height: 60px;
+    background-color: var(--color-primary);
+    display: flex;
+    align-items: center;
+    justify-content: center ;
+}
+
+h1{
+    border: 1px solid red;
+}
+
+main{
+    height: calc(100vh-120px);
+    display: flex;
+    border: 1px solid blues;
+}
+aside{
+  
+    background-color: green;
+    border:1px solid black;
+    width: 240px;
+}
+
+article{
+    flex:1;
+    display: flex;
+    align-items: end;
+    /* flex:100%; */
+    gap:10px;
+    border: 5px solid yellow;
+}
+
+img{
+    max-width: cal(cal(100%-20px)/3);
+}
+
+h2{
+    border: 1px solid blue;
+}
+
+
+footer{
+    height: 60px;
+    background-color: var(--color-primary);
+    display: flex;
+    align-items: center;
+    justify-content: center ;
+}

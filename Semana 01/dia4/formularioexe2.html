@@ -1,0 +1,175 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Registro</title>
+  </head>
+
+  <body>
+    <h5>Ejercicio 2</h5>
+    <hr />
+    <section>
+      <table border="1">
+        <tr>
+          <td colspan="2">Sign Up</td>
+        </tr>
+        <tr>
+          <td align="right"><label for="input-firstname">First Name</label></td>
+          <td>
+            <input
+              type="text"
+              name="txt_firstname"
+              placeholder="Enter First Name"
+              required
+              id="input-firstname"
+            />
+          </td>
+        </tr>
+        <tr>
+          <td align="right"><label for="input-lastname">Last Name</label></td>
+          <td>
+            <input
+              type="text"
+              name="txt_lastname"
+              placeholder="Enter Last Name"
+              required
+              id="input-lastname"
+            />
+          </td>
+        </tr>
+        <tr>
+          <td align="right"><label for="select-date">Date of Birth</label></td>
+          <td>
+            <select name="date" id="select-date">
+              <option value="">Date</option>
+              <option value="uno">1</option>
+              <option value="dos">2</option>
+              <option value="tres">3</option>
+              <option value="cuatro">4</option>
+              <option value="cinco">5</option>
+              <option value="seis">6</option>
+              <option value="siete">7</option>
+              <option value="ocho">8</option>
+              <option value="nueve">9</option>
+              <option value="diez">10</option>
+            </select>
+
+            <select name="month" id="select-month">
+              <option value="">Month</option>
+              <option value="january">January</option>
+              <option value="february">February</option>
+              <option value="march">March</option>
+              <option value="april">April</option>
+            </select>
+
+            <select name="year" id="select-year">
+              <option value="">Year</option>
+              <option value="noventanueva">1999</option>
+              <option value="dosmil">2000</option>
+              <option value="dosmiluno">2001</option>
+            </select>
+          </td>
+        </tr>
+
+        <tr>
+          <td align="right">
+            <label>Gender</label>
+          </td>
+
+          <td>
+            <input
+              id="rd-male"
+              type="radio"
+              name="rd-gender"
+              value="gm"
+              required
+            />
+            <label for="rd-male">Male</label>
+
+            <input id="rd-female" type="radio" name="rd-gender" value="gf" />
+            <label for="rd-female">Female</label>
+          </td>
+        </tr>
+        <tr>
+          <td align="right"><label for="select-country">Country</label></td>
+          <td>
+            <select name="country" id="select-country">
+              <option value="">Country</option>
+              <option value="peru">peru</option>
+              <option value="argentina">argentina</option>
+              <option value="chile">chile</option>
+              <option value="mexico">mexico</option>
+            </select>
+          </td>
+        </tr>
+        <tr>
+          <td align="right"><label for="input-email">E-mail</label></td>
+          <td>
+            <input
+              type="text"
+              name="txt-email"
+              id="input-email"
+              placeholder="Enter E-mail"
+              required
+            />
+          </td>
+        </tr>
+        <tr>
+          <td align="right"><label for="input-phone">Phone</label></td>
+          <td>
+            <input
+              id="input-phone"
+              type="text"
+              name="phone"
+              pattern="[0-9]{1,10}"
+              maxlength="10"
+              inputmode="numeric"
+              placeholder="Enter Phone"
+              title="Ingrese un máximo de 10 números"
+              required
+            />
+          </td>
+        </tr>
+        <tr>
+          <td align="right"><label for="contra">Password</label></td>
+          <td>
+            <input
+              id="contra"
+              type="password"
+              required
+              pattern="(?=.*[A-Z])(?=.*[a-z]).{8,}"
+            />
+          </td>
+        </tr>
+        <tr>
+          <td align="right"><label for="repcontra">Confirm Password</label></td>
+          <td>
+            <input
+              id="repcontra"
+              type="password"
+              required
+              pattern="(?=.*[A-Z])(?=.*[a-z]).{8,}"
+            />
+          </td>
+        </tr>
+        <tr>
+          <td></td>
+
+          <td align="left">
+            <input id="chk-agree" type="checkbox" name="chk-agree" required />
+            <label for="chk-agree">
+              Agree to the <a href="terms.html" target="_blank">Term of use</a></label
+            >
+          </td>
+        </tr>
+        <tr>
+          <td colspan="2" align="right">
+            <button type="submit">Enviar</button>
+            <button type="reset">Cancel</button>
+          </td>
+        </tr>
+      </table>
+    </section>
+  </body>
+</html>

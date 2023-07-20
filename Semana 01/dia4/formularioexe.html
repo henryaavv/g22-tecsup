@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Formularios de practica</title>
+  </head>
+  <body>
+    <section>
+      <table border="1">
+        <tr>
+          <th colspan="2" align="center">Registration Form</th>
+        </tr>
+        <tr>
+          <td><label for="">Enter name</label></td>
+          <td>
+            <input type="text" required minlength="3" maxlength="30" />
+          </td>
+        </tr>
+        <tr>
+          <td><label for="">Enter password</label></td>
+
+          <td>
+            <input
+              type="password"
+              required
+              minlength="8"
+              maxlength="8"
+              pattern="(?=.*[A-Z])(?=.*[a-z]).{8,}"
+            />
+          </td>
+        </tr>
+        <tr>
+          <td><label for="">Enter Address</label></td>
+
+          <td>
+            <textarea name="" id="" cols="30" rows="10" required></textarea>
+          </td>
+        </tr>
+        <tr>
+          <td><label for="">Select Game</label></td>
+
+          <td>
+            <input id="chk-hockey" type="checkbox" name="chk-hockey" required />
+            <label for="chk-hockey">Hokey</label>
+
+            <br />
+            <input
+              id="chk-football"
+              type="checkbox"
+              name="chk-football"
+              required
+            />
+            <label for="chk-football">Football</label>
+
+            <br />
+            <input
+              id="chk-badminton"
+              type="checkbox"
+              name="chk-badminton"
+              required
+            />
+            <label for="chk-badminton">Badminton</label>
+
+            <br />
+            <input id="chk-criket" type="checkbox" name="chk-criket" required />
+            <label for="chk-criket">Criket</label>
+
+            <br />
+            <input
+              id="chk-volleyball"
+              type="checkbox"
+              name="chk-volleyball"
+              required
+            />
+            <label for="chk-volleyball">volleyball</label>
+          </td>
+        </tr>
+        <tr>
+          <td><label for="">Gender</label></td>
+
+          <td>
+            <label for="rd-male">Male</label>
+            <input
+              id="rd-male"
+              type="radio"
+              name="rd-gender"
+              value="gm"
+              required
+              checked
+            />
+
+            <label for="rd-female">Female</label>
+            <input id="rd-female" type="radio" name="rd-gender" value="gf" />
+          </td>
+        </tr>
+        <tr>
+          <td><label for="">Select ur age</label></td>
+
+          <td>
+            <select name="age" id="select-age">
+              <option value="">Seleccionar</option>
+              <option value="adolescente">10-20</option>
+              <option value="joven">21-35</option>
+              <option value="adulto">35-mas</option>
+            </select>
+          </td>
+        </tr>
+        <tr>
+          <td>
+            <label for="input-foto">Foto de perfil</label>
+          </td>
+
+          <td>
+            <input type="file" id="input-foto" accept="image/png" required />
+          </td>
+        </tr>
+        <tr>
+          <td colspan="2" align="center">
+            <button type="button">Click Me</button>
+            <button type="reset">Restablecer</button>
+            <button type="submit">Submit Forn</button>
+          </td>
+        </tr>
+      </table>
+    </section>
+<hr/>
+
+  </body>
+</html>

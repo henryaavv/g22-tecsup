@@ -1,0 +1,207 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta
+      name="viewport"
+      content="width=
+  , initial-scale=1.0"
+    />
+    
+    <title>Document</title>
+  </head>
+  <body>
+    <header>Formularios</header>
+    <main>
+      <section>
+        <form action="">
+          <fieldset>
+            <legend>Datos personales</legend>
+
+            <div>
+              <label for="input-nombre-apellido">Nombres Completos</label>
+              <input
+                id="input-nombre-apellido"
+                type="text"
+                name="input-nombre-apellido"
+                placeholder="Ejm: Sara"
+                required
+              />
+            </div>
+
+            <div>
+              <label for="input-edad">DNI</label>
+              <input
+                id="input-dni"
+                type="text"
+                minlength="8"
+                maxlength="8"
+                required
+              />
+            </div>
+
+            <div>
+              <label for="input-edad">Edad</label>
+              <input id="input-edad" type="number" name="edad" required />
+            </div>
+
+            <div>
+              <label for="email">Correo Electronico</label>
+              <input
+                id="email"
+                type="email"
+                name="email"
+                placeholder="Ejm: henry@miempresa.com"
+              />
+            </div>
+
+            <div>
+              <label for="fecha-nac">Fecha de Nacimiento</label>
+              <input id="fecha-nac" type="date" name="nacimiento" />
+              <br />
+              <small style="color: #666"
+                >la fecha no debe ser mayor al año 2000</small
+              >
+            </div>
+            <div>
+              <label for="pass">Contraseña</label>
+              <input
+                id="pass"
+                type="password"
+                name="contra"
+                placeholder="Minimo 8 caracteres"
+              />
+            </div>
+            <div>
+              <label for="color-favorito">Elija su color favorito:</label>
+              <input id="color-favorito" type="color" name="color" />
+            </div>
+
+            <div>
+              <label for="salario">Salario (1500-5000):</label>
+              <input
+                id="salario"
+                type="range"
+                min="1500"
+                max="5000"
+                name="salario"
+              />
+            </div>
+
+            <div>
+              <label for="genero">Genero:</label>
+              <input id="genero" type="checkbox" />
+            </div>
+          </fieldset>
+
+          <fieldset>
+            <legend>Datos de inscripcion</legend>
+
+            <div>
+              deben compartir el mismo value
+              <p>Hobbies</p>
+              <label for="chk-guitarra">Tocar la guitarra</label>
+              <input id="chk-guitarra" type="checkbox" name="chk-guitarra" />
+              <br />
+
+              <label for="chk-futbol">Jugar al futbol</label>
+              <input id="chk-futbol" type="checkbox" name="chk-futbol" />
+              <br />
+
+              <label for="chk-cocina">Cocinar</label>
+              <input id="chk-cocina" type="checkbox" name="chk-cocina" />
+              <br />
+            </div>
+
+            <div>
+              <p>Elija tipo de pago</p>
+              <!--checked - esto va abajo-->
+              <label for="rd-credito">Tarjeta de Credito</label>
+              <input
+                id="rd-credito"
+                type="radio"
+                name="rd-tipo-pago"
+                value="tc"
+                required
+              />
+              <br />
+              <label for="rd-debito">Tarjeta de Debito</label>
+              <input
+                id="rd-debito"
+                type="radio"
+                name="rd-tipo-pago"
+                value="td"
+              />
+              <br />
+              <label for="rd-efectivo">Pago Efectivo</label>
+              <input
+                id="rd-efectivo"
+                type="radio"
+                name="rd-tipo-pago"
+                value="pe"
+              />
+              <br />
+            </div>
+
+            <div>
+              deben compartir todo el mismo name
+              <p>Turno</p>
+              <label for="rd-maniana">Maniana</label>
+              <input
+                type="radio"
+                id="rd-maniana"
+                name="rd-turno"
+                checked
+                value="tm"
+              />
+              <label for="tr-tarde">Tarde</label>
+              <input type="radio" id="rd-tarde" name="rd-turno" value="tt" />
+
+              <br />
+              <label for="tr-noche">Noche</label>
+              <input type="radio" id="rd-noche" name="rd-turno" value="tn" />
+            </div>
+
+            <div>
+              <label for="select-pais">Elija país:</label>
+
+              <select name="pais" id="select-pais">
+                <option value="">Seleccione ..</option>
+                <option value="Per">Perú</option>
+                <option value="Bola">Bolivia</option>
+                <option value="Chi">Chile</option>
+              </select>
+            </div>
+            <div>
+              <label for="txt-mensaje">Escriba su mensaje</label>
+              <textarea
+                name="mensaje"
+                id="txt-mensaje"
+                cols="30"
+                rows="10"
+                placeholder="Escriba un mensaje de 100 caracteres como máximo"
+              >
+            Mensaje de prueba
+            </textarea
+              >
+            </div>
+
+            <div>
+              <label for="input-foto">Foto de perfil</label>
+              <input
+                type="file"
+                id="input-foto"
+                accept="image/png, image/jpeg"
+              />
+            </div>
+          </fieldset>
+
+          <button type="submit">Enviar</button>
+
+          submit envia el formulario label+input label{Fecha de
+          nacimiento}+input[type="date"]
+        </form>
+      </section>
+    </main>
+  </body>
+</html>

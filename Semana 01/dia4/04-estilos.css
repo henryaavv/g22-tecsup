@@ -1,0 +1,11 @@
+/*hola*/
+section{
+    color: peru;
+}
+/*
+si un elemento tiene el mismo nivel de especificidad afectando a un mismo elemento, la ultima regla es la que prevalece
+*/
+
+p{
+    color: blue;
+}

@@ -1,0 +1,37 @@
+.nombre{
+    color: green;
+    border: 5px solid red;
+}
+
+.secundario{
+    color: orange;
+}
+
+/*selecctores por ID*/
+
+#primary{
+    color:blueviolet;
+}
+
+*{
+    color: blue;
+}
+/*Selectro por atributo*/
+
+input[type=text]{
+    border: solid orange 3px;
+}
+
+input[type=number]{
+    border: solid green 3px;
+}
+/*selector descendente*/
+div p, h2{
+    color:red;
+}
+
+/*selector hermano adyacente*/
+
+h1+p{
+    color:aqua;
+}

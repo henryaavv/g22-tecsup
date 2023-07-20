@@ -1,0 +1,47 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+header{
+    border: 5px solid red;
+    margin: 4px;
+    background-color: yellow ;
+
+}
+
+h1{
+    background-color: green;
+}
+
+main{
+    background-color: aqua;
+    border: 5px solid blue;
+   
+}
+
+section{
+
+    /* display: flex;
+    flex-direction: row-reverse;
+    flex-wrap: wrap-reverse; */
+    display: flex;
+    width: 600px;
+    height: 200px;
+    border: 5px solid fuchsia;
+    padding: 30px 30px;
+    background-color: bisque;
+    /* justify-content: flex-center; */
+    /* flex-wrap: wrap; */
+    /* margin: auto; */
+    margin: auto;
+}
+
+
+.frozen__enlace{
+    background-color: gold;
+    padding: 20px 60px 10px 1px;
+    /* display: block; */
+    /* margin:auto; */
+}
